@@ -1,0 +1,108 @@
+/* Hero Section */
+.hero-section {
+    padding: 4rem 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--azul-suave);
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem 0;
+}
+
+.features-section .card {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    height: 100%;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.features-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.features-section .card .text-center {
+    width: 100%;
+}
+
+.features-section h3 {
+    color: var(--azul-suave);
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+}
+
+.features-section p {
+    font-size: 1.1rem;
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: var(--laranja-suave);
+    transition: transform 0.3s ease;
+}
+
+.features-section .card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 4rem 0;
+    background-color: var(--branco);
+}
+
+.how-it-works h2 {
+    color: var(--azul-suave);
+    margin-bottom: 1rem;
+}
+
+.how-it-works .lead {
+    color: var(--cinza-escuro);
+    margin-bottom: 3rem;
+}
+
+.step-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--azul-suave);
+    color: var(--branco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.step-circle span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.how-it-works h4 {
+    color: var(--azul-suave);
+    margin-bottom: 0.5rem;
+} 

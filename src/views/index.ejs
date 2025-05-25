@@ -1,7 +1,116 @@
-<%- include('includes/head'); %>
+<%- include('includes/head.ejs') %>
 
-  <section class="container">
-    <h1><%= titulo %></h1>
-  </section>
+<main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <% if (user) { %>
+                        <h1>Bem-vindo(a) de volta, <%= user.username %>!</h1>
+                        <p class="lead">Clicando no botão abaixo você já pode começar a criar e organizar seus eventos e convidar pessoas ou ser chamado para eventos.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center">
+                            <a href="/events" class="btn btn-accent btn-lg px-4">Ver Eventos</a>
+                        </div>
+                    <% } else { %>
+                        <h1>Mantenha sua família e amigos conectados</h1>
+                        <p class="lead">Organize encontros, compartilhe momentos e mantenha todos informados sobre os próximos eventos do grupo.</p>
+                        <div class="d-grid gap-2 d-md-flex">
+                            <a href="/register" class="btn btn-accent btn-lg px-4 me-md-2">Criar Conta</a>
+                            <a href="/login" class="btn btn-primary btn-lg px-4">Entrar</a>
+                        </div>
+                    <% } %>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Família e amigos reunidos" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<%- include('includes/footer'); %>
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="text-center p-4">
+                            <i class="fas fa-user-plus feature-icon"></i>
+                            <h3>Crie sua conta</h3>
+                            <p>Registre-se gratuitamente para começar a organizar seus eventos e manter sua família e amigos conectados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="text-center p-4">
+                            <i class="fas fa-calendar-alt feature-icon"></i>
+                            <h3>Eventos</h3>
+                            <p>Crie eventos para seu grupo, defina data, hora e local. Mantenha todos informados sobre os próximos encontros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="text-center p-4">
+                            <i class="fas fa-users feature-icon"></i>
+                            <h3>Grupos</h3>
+                            <p>Convide familiares e amigos para participar. Todos podem ver quem vai e confirmar presença facilmente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2>Como Começar</h2>
+                    <p class="lead">É fácil começar a organizar seus eventos</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-circle">
+                            <span>1</span>
+                        </div>
+                        <h4>Crie sua conta</h4>
+                        <p>Registre-se gratuitamente</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-circle">
+                            <span>2</span>
+                        </div>
+                        <h4>Organize eventos</h4>
+                        <p>Adicione detalhes e convide pessoas</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-circle">
+                            <span>3</span>
+                        </div>
+                        <h4>Convide amigos</h4>
+                        <p>Envie convites para seu grupo</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="step-circle">
+                            <span>4</span>
+                        </div>
+                        <h4>Mantenha contato</h4>
+                        <p>Acompanhe as confirmações</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('includes/footer.ejs') %>
+</rewritten_file>

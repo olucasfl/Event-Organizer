@@ -1,0 +1,101 @@
+:root {
+    --azul-suave: #4a90e2;
+    --laranja-suave: #ff9f43;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #2c3e50;
+    --verde-suave: #2ecc71;
+}
+
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+}
+
+/* Utilitários */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--azul-suave);
+    color: var(--branco);
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background-color: var(--laranja-suave);
+    color: var(--branco);
+}
+
+.btn-accent:hover {
+    background-color: #f39c12;
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+    background-color: var(--branco);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Ícones */
+.feature-icon {
+    color: var(--laranja-suave);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--cinza-escuro);
+}
+
+/* Links */
+a {
+    color: var(--azul-suave);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--laranja-suave);
+} 
