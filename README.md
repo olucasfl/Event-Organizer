@@ -21,22 +21,6 @@ Para começar a usar o Organizador Familiar, basta seguir estes passos:
 
 Não é necessário configurar nada complexo! A aplicação já está pronta para usar assim que você criar sua conta e entrar.
 
-### Telas de Exemplo
-
-Abaixo estão algumas telas da aplicação para você ter uma ideia de como ela funciona:
-
-**Página de Registro:**
-
-Esta tela permite que novos usuários criem suas contas informando nome de usuário, email e senha.
-
-![Página de Registro](/prints/register.png)
-
-**Página Inicial (Logado):**
-
-Após fazer login, o usuário é recebido com uma mensagem personalizada e um botão para acessar a lista de eventos.
-
-![Página Inicial Logado](/prints/register.png)
-
 ## Funcionalidades Principais
 
 - Cadastro e Login de Usuários (Autenticação com bcrypt)
